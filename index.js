@@ -1,9 +1,9 @@
-import MagicString from 'magic-string'
+const MagicString  = require ('magic-string')
 
 const START_COMMENT = 'start_comment'
 const END_COMMENT = 'end_comment'
 
-export default function stripCode (options = {}) {
+function stripCode (options = {}) {
   return {
     name: 'stripCode',
 
