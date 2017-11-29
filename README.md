@@ -43,6 +43,14 @@ yarn add rollup-plugin-strip-code --dev
 Add to your `rollup.config.js`:
 
 ```js
+import pkg from './package.json'
+import commonjs from 'rollup-plugin-commonjs'
+import resolve from 'rollup-plugin-node-resolve'
+import babel from 'rollup-plugin-babel'
+
+//here we are
+import stripCode from "rollup-plugin-strip-code"
+
 export default [
   {
     input: 'src/main.js',
@@ -75,6 +83,24 @@ export default [
     ]
   }
 ];
+```
+
+WOAH-WOAH, what if I want to **remove the comments conditionnaly**? 
+
+You may use [rollup-plugin-conditional](https://github.com/AgronKabashi/rollup-plugin-conditional) plugin for that case, for instance:
+
+```js
+const isProduction = process.env.buildTarget === "production" //assuming you'd run it with something like "cross-env BABEL_ENV=production && rollup -c"
+...
+plugins: [
+  conditional(isProduction, [
+    stripCode({
+      start_comment: 'START.TESTS_ONLY',
+      end_comment: 'END.TESTS_ONLY'
+    })
+  ])
+]
+...
 ```
 
 ### Options
