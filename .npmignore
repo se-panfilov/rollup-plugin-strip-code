@@ -1,0 +1,10 @@
+*.log
+node_modules/
+.tmp
+.DS_Store
+.codeclimate.yml
+.editorconfig
+.idea
+TODO.md
+yarn.lock
+package-lock.json
