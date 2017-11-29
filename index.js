@@ -7,20 +7,20 @@ export default function stripCode (options = {}) {
   return {
     name: 'stripCode',
 
-    transform (code) {
-      const start_comment = options.start_comment || START_COMMENT
-      const end_comment = options.end_comment || END_COMMENT
-      const defaultPattern = new RegExp("([\\t ]*\\/\\* ?" + start_comment + " ?\\*\\/)[\\s\\S]*?(\\/\\* ?" + end_comment + " ?\\*\\/[\\t ]*\\n?)", "g")
+    transform (source) {
+      const startComment = options.start_comment || START_COMMENT
+      const endComment = options.end_comment || END_COMMENT
+      const defaultPattern = new RegExp(`([\\t ]*\\/\\* ?${startComment}?\\*\\/)[\\s\\S]*?(\\/\\* ?${endComment}?\\*\\/[\\t ]*\\n?)`, 'g')
       const pattern = options.pattern || defaultPattern
       let map
-      let code = code.replace(pattern, "")
+      let code = source.replace(pattern, '')
 
       if (options.sourceMap !== false && options.sourcemap !== false) {
         const magicString = new MagicString(code)
         map = magicString.generateMap({hires: true})
       }
 
-      return {code, map};
+      return {code, map}
     }
   }
 }
