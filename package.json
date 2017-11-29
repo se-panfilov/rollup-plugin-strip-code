@@ -4,7 +4,7 @@
   "description": "A rollup plugin to remove parts of code based on regular expressions.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint ./index.js"
   },
   "repository": {
     "type": "git",
@@ -17,6 +17,15 @@
   },
   "homepage": "https://github.com/se-panfilov/rollup-plugin-uglify-bundle#readme",
   "dependencies": {
-    "magic-string": "^0.22.4"
+    "magic-string": "0.22.4"
+  },
+  "devDependencies": {
+    "eslint": "4.12.0",
+    "eslint-config-standard": "10.2.1",
+    "eslint-friendly-formatter": "3.0.0",
+    "eslint-plugin-import": "2.8.0",
+    "eslint-plugin-node": "5.2.1",
+    "eslint-plugin-promise": "3.6.0",
+    "eslint-plugin-standard": "3.0.1"
   }
 }
