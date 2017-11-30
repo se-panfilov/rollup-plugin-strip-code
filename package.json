@@ -1,6 +1,6 @@
 {
   "name": "rollup-plugin-strip-code",
-  "version": "0.1.4",
+  "version": "0.2.0",
   "description": "A rollup plugin to remove parts of code based on regular expressions.",
   "main": "index.js",
   "scripts": {
