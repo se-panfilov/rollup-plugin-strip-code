@@ -10,7 +10,7 @@ function stripCode (options = {}) {
     transform (source) {
       const startComment = options.start_comment || START_COMMENT
       const endComment = options.end_comment || END_COMMENT
-      const defaultPattern = new RegExp(`([\\t ]*\\/\\* ?${startComment}?\\*\\/)[\\s\\S]*?(\\/\\* ?${endComment}?\\*\\/[\\t ]*\\n?)`, 'g')
+      const defaultPattern = new RegExp(`([\\t ]*\\/\\* ?${startComment} ?\\*\\/)[\\s\\S]*?(\\/\\* ?${endComment} ?\\*\\/[\\t ]*\\n?)`, 'g')
       const pattern = options.pattern || defaultPattern
       let map
       let code = source.replace(pattern, '')
