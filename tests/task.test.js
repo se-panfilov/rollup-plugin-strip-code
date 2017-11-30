@@ -1,5 +1,11 @@
 const stripCode = require('../index')
+const rollupPluginUtils = require('../node_modules/rollup-pluginutils')
 
+const mockedFilter = jest.fn((id) => true)
+
+jest.mock('../node_modules/rollup-pluginutils', () => ({
+  createFilter: jest.fn(() => mockedFilter)
+}))
 
 describe('stripCode.', () => {
 
@@ -7,13 +13,20 @@ describe('stripCode.', () => {
     expect(stripCode().name).toBe('stripCode')
   })
 
-  test('should return proper oberct', () => {
+  test('should return proper object', () => {
     expect(typeof stripCode()).toBe('object')
+  })
+
+  test('should mock createFilter', () => {
+    const filterFn = rollupPluginUtils.createFilter()
+    expect(typeof filterFn).toBe('function')
+    expect(filterFn()).toBe(true)
   })
 
   describe('default settings.', () => {
 
     test('should remove code', () => {
+
       const obj = stripCode()
 
       const source = `whatever\n
