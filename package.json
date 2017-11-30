@@ -26,7 +26,8 @@
   },
   "homepage": "https://github.com/se-panfilov/rollup-plugin-uglify-bundle#readme",
   "dependencies": {
-    "magic-string": "0.22.4"
+    "magic-string": "0.22.4",
+    "rollup-pluginutils": "^2.0.1"
   },
   "devDependencies": {
     "eslint": "4.12.0",
