@@ -7,7 +7,7 @@ Can be used to remove sections of code.
 
 _Why_: For example you may want to remove code from production builds, but keep it in development and test environments.
 
-Usefull to remove code from production builds that are only needed in development and test environments, or to remove custom internationalized information. 
+Usefull to remove code from production builds that are only needed in development and test environments, or to remove custom internationalized information.
 _What it does_: This plugin uses start and end comments to identify the code sections to strip out. For example:
 
 
@@ -28,6 +28,8 @@ removeMeInProduction();
 
 doNotRemoveMe();
 ```
+
+**Attention**: You have to use `/* ... */` for such comments, not just `// ...`
 
 ## Getting Started
 First, install `rollup-plugin-strip-code` as a development dependency:
@@ -85,7 +87,7 @@ export default [
 ];
 ```
 
-WOAH-WOAH, what if I want to **remove the comments conditionnaly**? 
+WOAH-WOAH, what if I want to **remove the comments conditionnaly**?
 
 You may use [rollup-plugin-conditional](https://github.com/AgronKabashi/rollup-plugin-conditional) plugin for that case, for instance:
 
