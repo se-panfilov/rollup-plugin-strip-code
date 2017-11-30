@@ -4,7 +4,8 @@
   "description": "A rollup plugin to remove parts of code based on regular expressions.",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint ./index.js"
+    "lint": "eslint ./index.js",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -35,6 +36,7 @@
     "eslint-plugin-node": "5.2.1",
     "eslint-plugin-promise": "3.6.0",
     "eslint-plugin-standard": "3.0.1",
+    "jest": "^21.2.1",
     "rollup-plugin-buble": "^0.18.0"
   }
 }
