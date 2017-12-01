@@ -1,4 +1,4 @@
-# rollup-plugin-uglify-bundle
+# rollup-plugin-strip-code
 Rollup plugin to generated distinct bundle for minified code
 
 Can be used to remove sections of code.
