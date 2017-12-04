@@ -1,5 +1,6 @@
 # rollup-plugin-strip-code
-Rollup plugin to generated distinct bundle for minified code
+
+A rollup plugin to remove parts of code based on regular expressions.
 
 Can be used to remove sections of code.
 
