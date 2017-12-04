@@ -1,4 +1,5 @@
 
+[![Build Status](https://travis-ci.org/se-panfilov/rollup-plugin-strip-code.svg?branch=master)](https://travis-ci.org/se-panfilov/rollup-plugin-strip-code)
 [![GitHub license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/se-panfilov/rollup-plugin-strip-code/blob/master/LICENSE)
 
 
