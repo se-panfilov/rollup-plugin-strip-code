@@ -1,3 +1,11 @@
+
+[![GitHub license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/se-panfilov/rollup-plugin-strip-code/blob/master/LICENSE)
+
+
+[![NPM](https://nodei.co/npm/rollup-plugin-strip-code.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/vue-notifications/)
+[![JavaScript Style Guide](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
+
+
 # rollup-plugin-strip-code
 
 A rollup plugin to remove parts of code based on regular expressions.
