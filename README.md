@@ -4,7 +4,7 @@
 [![GitHub license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/se-panfilov/rollup-plugin-strip-code/blob/master/LICENSE)
 
 
-[![NPM](https://nodei.co/npm/rollup-plugin-strip-code.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/vue-notifications/)
+[![NPM](https://nodei.co/npm/rollup-plugin-strip-code.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/rollup-plugin-strip-code/)
 [![JavaScript Style Guide](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
 
 
@@ -144,6 +144,7 @@ npm test
 
 ## Same plugins for another tools
 
+ - WebPack [strip-code-loader](https://github.com/se-panfilov/strip-code-loader)
  - Grunt [grunt-strip-code](https://github.com/nuzzio/grunt-strip-code)
  - Gulp [gulp-strip-code](https://github.com/massick/gulp-strip-code)
 

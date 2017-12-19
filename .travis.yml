@@ -6,6 +6,7 @@ node_js:
   - '6'
   - '7'
   - '8'
+  - '9'
 notifications:
   email: false
 script: npm test
