@@ -27,7 +27,7 @@
   "homepage": "https://github.com/se-panfilov/rollup-plugin-strip-code#readme",
   "dependencies": {
     "magic-string": "0.22.4",
-    "rollup-pluginutils": "2.0.1"
+    "rollup-pluginutils": "2.1.0"
   },
   "devDependencies": {
     "eslint": "4.12.0",
