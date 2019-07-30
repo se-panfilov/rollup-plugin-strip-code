@@ -5,7 +5,7 @@ const START_COMMENT = 'start_comment'
 const END_COMMENT = 'end_comment'
 
 function stripCode (options = {}) {
-  const {include, exclude, sourceMap, pattern, sourcemap} = options
+  const { include, exclude, sourceMap, pattern, sourcemap } = options
 
   const filter = createFilter(include, exclude)
 
@@ -19,14 +19,14 @@ function stripCode (options = {}) {
       const endComment = options.end_comment || END_COMMENT
       const defaultPattern = new RegExp(`([\\t ]*\\/\\* ?${startComment} ?\\*\\/)[\\s\\S]*?(\\/\\* ?${endComment} ?\\*\\/[\\t ]*\\n?)`, 'g')
       let map
-      let code = source.replace(pattern || defaultPattern, '')
+      const code = source.replace(pattern || defaultPattern, '')
 
       if (sourceMap !== false && sourcemap !== false) {
         const magicString = new MagicString(code)
-        map = magicString.generateMap({hires: true})
+        map = magicString.generateMap({ hires: true })
       }
 
-      return {code, map}
+      return { code, map }
     }
   }
 }
