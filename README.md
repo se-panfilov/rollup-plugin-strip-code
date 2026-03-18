@@ -1,3 +1,7 @@
+# Deprecated / Unmaintained
+This project is no longer actively maintained. It may still work, but use it at your own risk.
+Please consider forking it if you need continued support.
+
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/4ffd0a188386439cb80e9b25adf1252f)](https://www.codacy.com/app/se-panfilov/rollup-plugin-strip-code?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=se-panfilov/rollup-plugin-strip-code&amp;utm_campaign=Badge_Grade)
 [![](https://api.codeclimate.com/v1/badges/9a43a0ab347c227334fa/maintainability)](https://codeclimate.com/github/se-panfilov/rollup-plugin-strip-code/maintainability)
 [![Build Status](https://travis-ci.org/se-panfilov/rollup-plugin-strip-code.svg?branch=master)](https://travis-ci.org/se-panfilov/rollup-plugin-strip-code)
